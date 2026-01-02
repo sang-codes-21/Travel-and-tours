@@ -2,14 +2,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-40 flex sm:flex-col flex-col lg:flex-row gap-8 py-10 bg-gray-100">
-      <div className="p-4 text-xl w-1/3">
+    <div className="px-10 md:px-40 flex flex-col  lg:flex-row gap-8 py-10 bg-gray-100">
+      <div className="md:p-4 text-xl md:w-1/3">
         <img
           src="https://placehold.co/400x500"
           alt="About Global Rising Tours & Travel"
         />
       </div>
-      <div className="text-lg w-2/3">
+      <div className="text-lg md:w-2/3">
         <h1 className=" text-lg text-[#004463]">
           About Global Rising Tours & Travel
         </h1>

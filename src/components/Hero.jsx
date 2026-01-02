@@ -16,7 +16,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="relative">
+    <div className=" ">
       <div>
         {imgsrc.map((img, index) => {
           return (
