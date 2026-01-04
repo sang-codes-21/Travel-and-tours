@@ -1,11 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="flex justify-between h-20 w-full px-28 py-2 border-b border-gray-300">
-      <img src={Logo} alt="Logo" className="h-14 w-auto" />
-      <div className=" flex justify-between font-semibold hover:text-[#004463] items-center  gap-10">
+    <nav className="flex justify-between h-20 w-full md:px-28 px-4 p-2 border-b border-gray-300">
+      <img src={Logo} alt="Logo" className="p-2 w-auto" />
+      <div className="hidden md:flex justify-between font-semibold hover:text-[#004463] items-center  gap-10">
         <Link to="/">Home</Link>
         <Link to="/tours">Tours</Link>
         <Link to="/adventure">Adventure</Link>
@@ -19,6 +21,12 @@ const Navbar = () => {
         >
           Contact
         </Link>
+      </div>
+
+      <div className="md:hidden flex items-center">
+        <button onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={32} /> : <Menu size={32} />}
+        </button>
       </div>
     </nav>
   );

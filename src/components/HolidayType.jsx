@@ -148,15 +148,20 @@ const HolidayType = () => {
                   className="w-full h-full object-cover rounded-3xl shadow-md"
                 />
                 <div
-                  className={`flex absolute bg-black/50 opacity-0 transition-opacity duration-900 ease-in-out
+                  className={`flex flex-col absolute bg-black/50 opacity-0 transition-opacity duration-900 ease-in-out
                   group-hover:opacity-100 w-full h-full top-0 left-0 flex
-                  justify-center items-center text-white ${
+                  justify-center items-start p-10 text-white ${
                     isHolidayActive === index ? "opacity-100" : "opacity-0"
                   } `}
                 >
+                  <p className="text-lg font-semibold">{img.location}</p>
                   <h2 className="text-2xl font-semibold">{img.location}</h2>
-                  <p>Duration: {img.duration}</p>
-                  <p>Difficulty: {img.difficulty}</p>
+
+                  <div className="flex gap-6 ">
+                    <p>Duration: {img.duration}</p>
+                    <p>Difficulty: {img.difficulty}</p>
+                  </div>
+
                   <p>Activity: {img.activity}</p>
                   <p>Price: {img.price}</p>
                   <button className="px-6 py-1 h-10 text-center whitespace-nowrap bg-[#004463] text-white rounded-full hover:bg-white hover:text-[#004463] pointer-events-auto">
