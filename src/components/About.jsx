@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-10 md:px-40 flex flex-col  lg:flex-row gap-8 py-10 bg-gray-100">
+    <div className="px-10 pt-24 md:px-40 flex flex-col  lg:flex-row gap-8 py-10 bg-gray-100">
       <div className="md:p-4 text-xl md:w-1/3">
         <img
           src="https://placehold.co/400x500"

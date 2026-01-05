@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="relative">
       <Navbar />
       <Hero />
-      <div className="absolute top-[750px] pointer-events-none left-0 w-full h-[400px]  z-10">
+      <div className="absolute  top-[400px] md:top-[640px]  pointer-events-none left-0 w-full h-full  z-10">
         <Search />
       </div>
       <About />
