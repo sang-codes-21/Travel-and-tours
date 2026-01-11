@@ -7,18 +7,22 @@ import Trek from "../src/pages/Trek.jsx";
 import About from "../src/pages/About.jsx";
 import Blog from "../src/pages/Blog.jsx";
 import Contact from "../src/pages/Contact.jsx";
+import Layout from "./layout/Layout.jsx";
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <HomePage />,
+      element: <Layout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "tours", element: <Tours /> },
+        { path: "adventure", element: <Adventure /> },
+        { path: "trek", element: <Trek /> },
+        { path: "about", element: <About /> },
+        { path: "blog", element: <Blog /> },
+        { path: "contact", element: <Contact /> },
+      ],
     },
-    { path: "/tours", element: <Tours /> },
-    { path: "/adventure", element: <Adventure /> },
-    { path: "/trek", element: <Trek /> },
-    { path: "/about", element: <About /> },
-    { path: "/blog", element: <Blog /> },
-    { path: "/contact", element: <Contact /> },
   ]);
 
   return <RouterProvider router={router} />;

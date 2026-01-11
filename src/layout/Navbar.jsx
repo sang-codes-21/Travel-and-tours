@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="flex justify-between h-20 w-full md:px-28 px-4 p-2 border-b border-gray-300">
+    <nav className="sticky top-0 z-50  bg-white flex justify-between h-20 w-full md:px-28 px-4 p-2 border-b border-gray-300">
       <img src={Logo} alt="Logo" className="p-2 w-auto" />
       <div className="hidden md:flex justify-between font-semibold hover:text-[#004463] items-center  gap-10">
         {links.map((item, index) => (

@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="px-6 md:px-40">
+    <div className="px-6 md:px-40 ">
       <div
         className="h-full w-full bg-white  md:px-10 p-4 flex flex-col md:flex-row  md:items-center 
        rounded-xl md:rounded-full text-m font-semibold shadow-lg border gap-4 "
