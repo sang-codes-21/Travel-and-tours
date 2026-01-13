@@ -57,7 +57,10 @@ const HolidayType = () => {
      } `}
               >
                 <p>{img.data}</p>
-                <Button variant="primary" className="text-base px-6 py-1 h-10">
+                <Button
+                  variant="primary"
+                  className="text-base px-6 py-1 h-10 whitespace-nowrap"
+                >
                   Learn More
                 </Button>
               </div>
