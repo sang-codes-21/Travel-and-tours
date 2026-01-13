@@ -1,8 +1,8 @@
 import React from "react";
-import Range from "../components/Range.jsx";
+import Range from "../components/ui/Range.jsx";
 import Card from "../components/ui/Card.jsx";
 import { places } from "../data/adventure.js";
-import Filter from "../components/Filter.jsx";
+import Filter from "../components/Adventure/Filter.jsx";
 const Adventure = () => {
   return (
     <>

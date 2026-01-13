@@ -15,4 +15,4 @@ export const Activities = ["Adventure", "Tour", "EducationTour", "Treks"];
 
 export const TripTypes = ["inbound", "outbound"];
 
-export const Difiiculties = ["Easy", "Medium", "Hard"];
+export const Difficulties = ["Easy", "Medium", "Hard"];

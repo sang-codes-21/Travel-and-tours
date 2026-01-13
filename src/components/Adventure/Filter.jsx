@@ -3,9 +3,10 @@ import {
   Destinations,
   Activities,
   TripTypes,
-  Difiiculties,
-} from "../data/destination.js";
-import Range from "./Range.jsx";
+  Difficulties,
+} from "../../data/destination.js";
+import Range from "../ui/Range.jsx";
+
 const Filter = () => {
   return (
     <div>
@@ -50,7 +51,7 @@ const Filter = () => {
       </div>
       <div className="mt-4">
         <h1>Difficulties</h1>
-        {Difiiculties.map((items) => (
+        {Difficulties.map((items) => (
           <label className="flex items-center ">
             <input type="checkbox" className="mr-2 h-5 w-5"></input>
             {items}

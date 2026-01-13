@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Slider from "./ui/Slider.jsx";
+import Slider from "./Slider.jsx";
 const Range = () => {
   const [number, setNumber] = useState(50);
   return (

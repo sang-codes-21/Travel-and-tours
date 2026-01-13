@@ -1,6 +1,6 @@
 import React from "react";
-import Accordion from "./ui/Accordion";
-const FrequentlyAskedQue = () => {
+import Accordion from "./Accordion";
+const FAQ = () => {
   return (
     <div className="md:px-44 py-10 ">
       <Accordion />
@@ -8,4 +8,4 @@ const FrequentlyAskedQue = () => {
   );
 };
 
-export default FrequentlyAskedQue;
+export default FAQ;

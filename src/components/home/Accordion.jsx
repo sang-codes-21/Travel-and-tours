@@ -1,28 +1,6 @@
 import { useState } from "react";
-
+import { toggleAccordion } from "../../data/toggleAccordion.js";
 const Accordion = () => {
-  const toggleAccordion = [
-    {
-      id: 0,
-      que: "Why should I visit Nepal?",
-      ans: "Nepal offers a unique blend of adventure, culture, and natural beauty. From the majestic Himalayas to ancient temples and vibrant cities, Nepal has something for every type of traveler.",
-    },
-    {
-      id: 1,
-      que: "What is your cancellation policy?",
-      ans: "Cancellation policies vary by tour. We offer partial or full refunds based on how early the cancellation is made. Please refer to the specific terms during booking.",
-    },
-    {
-      id: 2,
-      que: "Do you offer customizable tour packages?",
-      ans: "Yes, we specialize in tailor-made itineraries based on your interests, schedule, and budget.",
-    },
-    {
-      id: 3,
-      que: "How do I book a tour with your company?",
-      ans: "You can book online through our website, call our office, or email us. Our travel consultants will assist you with the itinerary, pricing, and payment.",
-    },
-  ];
   const [isOpen, setisOpen] = useState(null);
 
   const handleToggle = (id) => {
@@ -30,7 +8,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="px-6 md:px-28">
+    <div className="px-6 md:px-28 h-[450px] py-10">
       <h1 className="text-3xl ">Frequently Asked Questions</h1>
       <div className="mt-4">
         {toggleAccordion.map((item, id) => (

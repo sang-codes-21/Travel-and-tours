@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Card = ({
   TourName,
@@ -35,9 +36,12 @@ const Card = ({
         <div className="md:w-1/5">
           <p className="md:text-xl text-sm mt-4">Duration: {duration}</p>
           <p className="md:text-xl text-sm mt-4">Price : ${price}</p>
-          <button className="mt-6 bg-[#004463] text-white text-lg rounded-full hover:bg-[#006080] px-4 py-2">
+          <Button
+            variant="primary"
+            className="mt-6 text-lg px-4 py-2 whitespace-nowrap"
+          >
             More Details
-          </button>
+          </Button>
         </div>
       </div>
     </div>

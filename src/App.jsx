@@ -7,12 +7,12 @@ import Trek from "../src/pages/Trek.jsx";
 import About from "../src/pages/About.jsx";
 import Blog from "../src/pages/Blog.jsx";
 import Contact from "../src/pages/Contact.jsx";
-import Layout from "./layout/Layout.jsx";
+import Common from "./common/Common.jsx";
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: <Common />,
       children: [
         { index: true, element: <HomePage /> },
         { path: "tours", element: <Tours /> },
