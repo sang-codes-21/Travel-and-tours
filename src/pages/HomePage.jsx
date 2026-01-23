@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../components/home/Hero.jsx";
 import Search from "../components/home/Search.jsx";
 import About from "../components/home/About.jsx";
@@ -9,7 +8,7 @@ import VisaAssistance from "../components/home/VisaAssistance.jsx";
 import FAQ from "../components/home/FAQ.jsx";
 const HomePage = () => {
   return (
-    <div className="relative">
+    <main className="relative">
       <Hero />
       <div className="absolute  top-[400px] md:top-[560px]   left-0 w-full h-[400px]  z-10">
         <Search />
@@ -21,7 +20,7 @@ const HomePage = () => {
       <CustomerReviews />
       <VisaAssistance />
       <FAQ />
-    </div>
+    </main>
   );
 };
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import { imgsrc } from "../../data/heroData.js";
@@ -8,7 +7,7 @@ import "swiper/css/pagination";
 
 const Hero = () => {
   return (
-    <div className="w-full h-full relative">
+    <section className="w-full h-full relative">
       <Swiper
         modules={[Autoplay, EffectFade, Pagination]}
         effect="fade"
@@ -28,17 +27,17 @@ const Hero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute gap-2 md:gap-4 md:ml-20 top-0 left-0 max-w-7xl h-full flex flex-col  z-10 text-white   px-10 text-sm md:text-2xl justify-center  ">
+      <header className="absolute gap-2 md:gap-4  top-0 left-[10%]  max-w-7xl   h-full flex flex-col   z-10 text-white   text-sm md:text-2xl justify-center  ">
         <p>Global Rising Tours & Travel</p>
-        <h1 className="text-2xl md:text-6xl md:w-[40%] font-bold">
+        <h1 className="text-2xl md:text-6xl md:max-w-3xl  font-bold">
           Your Gateway to the World’s Greatest Adventures
         </h1>
-        <p className="md:w-[50%] text-lg">
+        <p className="md:max-w-[50%]  text-lg">
           Explore the heart of the Himalayas with Nepal’s most trusted travel
           partner. Authentic experiences, curated just for you.
         </p>
-      </div>
-    </div>
+      </header>
+    </section>
   );
 };
 

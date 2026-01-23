@@ -6,7 +6,7 @@ const HolidayType = () => {
   const [isHolidayActive, setIsHolidayActive] = useState(0);
 
   return (
-    <div className="w-full h-full py-10 px-10 lg:px-40 text-lg">
+    <section className="max-w-7xl mx-auto p-[3%] text-lg">
       <h1 className="mb-6">HolidayType</h1>
 
       <div className="flex max-w-7xl mx-auto gap-8 flex-col items-center md:flex-row ">
@@ -70,7 +70,7 @@ const HolidayType = () => {
       </div>
 
       <div className=" max-w-7xl mx-auto py-10 flex flex-col lg:flex-row justify-center items-center text-lg">
-        <div className="w-auto ">
+        <div className="lg:w-[60%] ">
           Discover Weekly Travelling Hot Deals On Select Expedition Departures
           Curated destinations and tours that capture the true essence of
           location, ensuring you experience. Our attraction pass save you more.
@@ -124,7 +124,7 @@ const HolidayType = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

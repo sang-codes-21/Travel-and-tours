@@ -1,17 +1,17 @@
-import React from "react";
 import Button from "../ui/Button";
 
 const About = () => {
   return (
-    <div className="bg-gray-100">
-      <div className="mx-auto  max-w-7xl flex flex-col  lg:flex-row gap-8 py-16 ">
-        <div className="md:p-4 text-xl md:w-1/3">
+    <section className="bg-gray-100">
+      <article className="mx-auto  max-w-7xl  flex  flex-col  lg:flex-row gap-8 py-16 ">
+        <div className="p-[4%]   lg:w-1/3">
           <img
-            src="https://placehold.co/400x500"
+            src="https://images.unsplash.com/photo-1598751337485-0d57b0c50b83?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG91cmlzbXxlbnwwfHwwfHx8MA%3D%3D"
             alt="About Global Rising Tours & Travel"
+            className="h-[450px]  lg:w-full mx-auto  h-auto rounded-lg shadow-lg"
           />
         </div>
-        <div className="text-lg p-10 md:w-2/3">
+        <div className="text-lg lg:pl-0 p-[4%] lg:w-2/3">
           <h1 className=" text-lg text-[#004463]">
             About Global Rising Tours & Travel
           </h1>
@@ -30,15 +30,15 @@ const About = () => {
             services that… Trusted, Local Travel Experts Flexible, Hassle-Free
             Bookings Real-Time Itinerary Updates
           </p>
-          <li>Trusted, Local Travel Experts</li>
-          <li>Flexible, Hassle-Free Bookings</li>
-          <li>Real-Time Itinerary Updates</li>
+          <ul>
+            <li>Trusted, Local Travel Experts</li>
+            <li>Flexible, Hassle-Free Bookings</li>
+            <li>Real-Time Itinerary Updates</li>
+          </ul>
           <div className="py-4">
-            <Button variant="primary">
-              Learn More
-            </Button>
-          </div>
-        </div>
+            <Button variant="primary">Learn More</Button>
+        article>
+    </section/div>
       </div>
     </div>
   );

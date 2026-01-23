@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Destinations,
   Activities,
@@ -32,8 +31,8 @@ const Filter = () => {
       </div>
       <div className="mt-6">
         <h1>Activities</h1>
-        {Activities.map((item) => (
-          <label className="flex items-center">
+        {Activities.map((item, index) => (
+          <label key={index} className="flex items-center">
             <input type="checkbox" className="mr-2 h-5 w-5" />
             {item}
           </label>
@@ -42,8 +41,8 @@ const Filter = () => {
 
       <div className="mt-4">
         <h1>Trip Types</h1>
-        {TripTypes.map((items) => (
-          <label className="flex items-center">
+        {TripTypes.map((items, index) => (
+          <label key={index} className="flex items-center">
             <input type="checkbox" className=" mr-2 h-5 w-5" />
             {items}
           </label>
@@ -51,8 +50,8 @@ const Filter = () => {
       </div>
       <div className="mt-4">
         <h1>Difficulties</h1>
-        {Difficulties.map((items) => (
-          <label className="flex items-center ">
+        {Difficulties.map((items, index) => (
+          <label key={index} className="flex items-center ">
             <input type="checkbox" className="mr-2 h-5 w-5"></input>
             {items}
           </label>

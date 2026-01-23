@@ -1,16 +1,18 @@
-import React from "react";
-import Range from "../components/ui/Range.jsx";
 import Card from "../components/ui/Card.jsx";
 import { places } from "../data/adventure.js";
 import Filter from "../components/Adventure/Filter.jsx";
+import { useNavigate } from "react-router-dom";
 const Adventure = () => {
+  const navigate = useNavigate();
   return (
-    <>
-      <h1 className="text-4xl bg-gray-200 font-semibold p-8">Adventure</h1>
-      <div className="max-w-7xl mx-auto  py-10 flex flex-col md:flex-row text-xl">
-        <div className="mt-4 p-4  md:w-[25%] w-full">
+    <main>
+      <header className="text-4xl bg-gray-200 font-semibold p-8">
+        Adventure
+      </header>
+      <section className="max-w-7xl mx-auto  py-10 flex flex-col md:flex-row text-xl">
+        <aside className="mt-4 p-4  md:w-[25%] w-full">
           <Filter />
-        </div>
+        </aside>
         <div className=" w-full flex flex-col">
           {places.map((place, id) => (
             <div className=" p-2 " key={place.id}>
@@ -24,12 +26,17 @@ const Adventure = () => {
                 person={place.person}
                 duration={place.duration}
                 price={place.price}
+                onClick={() =>
+                  navigate(
+                    `/tours/${place.name.toLowerCase().replace(/\s+/g, "-")}`,
+                  )
+                }
               />
             </div>
           ))}
         </div>
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
 

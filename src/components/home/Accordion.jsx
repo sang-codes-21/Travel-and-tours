@@ -8,7 +8,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="px-6 md:px-28 h-[450px] py-10">
+    <div className="px-6 lg:px-28 h-full py-10">
       <h1 className="text-3xl ">Frequently Asked Questions</h1>
       <div className="mt-4">
         {toggleAccordion.map((item, id) => (
